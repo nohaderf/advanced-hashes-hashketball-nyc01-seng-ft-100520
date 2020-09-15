@@ -128,6 +128,7 @@ def game_hash
 end
 
 
+
 # Build a method, num_points_scored that takes in an argument of a player's name and returns the number of points scored for that player.
 
 def num_points_scored(player_name)
@@ -139,6 +140,8 @@ def num_points_scored(player_name)
     end
   end
 end
+
+
 
 # Build a method, shoe_size, that takes in an argument of a player's name and returns the shoe size for that player.
 
@@ -152,6 +155,8 @@ def shoe_size(player_name)
   end
 end
 
+
+
 # Build a method, team_colors, that takes in an argument of the team name and returns an Array of that team's colors.
 
 def team_colors(team_name)
@@ -161,6 +166,8 @@ def team_colors(team_name)
     end
   end
 end
+
+
 
 # Build a method, team_names, that operates on the game Hash to return an Array of the team names.
 
@@ -172,5 +179,6 @@ def team_names
 end
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
+
 
 # Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.

@@ -131,10 +131,10 @@ end
 
 
 def num_points_scored(player_name)
-  if game_hash[:home][:players].include?(player_name)
-    return game_hash[:home][:players][:points]
-  elsif game_hash[:away][:players].include?(player_name)
-    return game_hash[:away][:players][:points]
+  game_hash.each do |team, team_values|
+    team_values[:players].each do |player_info|
+      if player_info[:player_name] == player_name
+        return player_info[:score]
   end
 end
 

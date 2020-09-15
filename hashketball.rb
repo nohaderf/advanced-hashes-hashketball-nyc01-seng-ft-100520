@@ -211,14 +211,15 @@ end
 
 def big_shoe_rebounds
   shoe_sizes = [ ]
+  biggest_shoe = nil
   game_hash.each do |team, team_values|
     team_values[:players].each do |player_info|
-      sorted_shoes = player_info[:shoe].sort
-      shoe_sizes << sorted_shoes
-      player_info[]
-    team_values[:players].each do |player_info|
-      
+      shoe_sizes << player_info[:shoe]
+      shoe_sizes.sort
+      biggest_shoe = shoe_size[0]
+      if player_info[:shoe] == biggest_shoe
+        return player_info[:rebounds]
+      end
     end
-    shoe_sizes[0]
   end
 end

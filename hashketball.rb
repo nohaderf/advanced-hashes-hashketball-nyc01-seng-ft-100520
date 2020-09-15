@@ -166,7 +166,9 @@ end
 
 def team_names
   team_array = []
-  game_hash.
+  merge_teams = game_hash[:home].merge(game_hash[:away])
+  team_array.push(merge_teams)
+end
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
 

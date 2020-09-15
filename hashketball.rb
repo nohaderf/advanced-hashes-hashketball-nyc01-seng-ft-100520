@@ -218,8 +218,9 @@ def big_shoe_rebounds
       shoe_sizes.sort
       biggest_shoe = shoe_size[0]
       if player_info[:shoe] == biggest_shoe
-        return player_info[:rebounds]
+        player_info[:rebounds] = player_rebounds
       end
     end
   end
+  player_rebounds
 end

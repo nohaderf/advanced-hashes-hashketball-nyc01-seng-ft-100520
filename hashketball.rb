@@ -183,7 +183,11 @@ end
 def player_numbers(team_name)
   jersey_numbers = []
   game_hash.each do |team, team_values|
-    team_values[:team_name] == team_name
+    if team_values[:team_name] == team_name
+      team_values[:players].each do |player_info|
+        jersey_number << player_info[:number]
+      end
+    end
   end
 end
 # Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.

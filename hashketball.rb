@@ -164,7 +164,10 @@ end
 
 # Build a method, team_names, that operates on the game Hash to return an Array of the team names.
 
+def team_names
+  team_array = []
+  game_hash.
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
 
-
+# Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.

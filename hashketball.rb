@@ -185,7 +185,7 @@ def player_numbers(team_name)
   if game_hash[:home][:team_name] == team_name
     jersey_numbers << game_hash[:home][:players][:number]
   elsif game_hash[:away][:team_name] == team_name
-    jersey_numbers << game_hash[:away][:players][:number]  =
+    jersey_numbers << game_hash[:away][:players][:number]
   end
   jersey_numbers
 end

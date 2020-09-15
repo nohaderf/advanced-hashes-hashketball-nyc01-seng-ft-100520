@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,15 @@ def game_hash
   }
 end
 
-# Write code here
+# Build a method, num_points_scored that takes in an argument of a player's name and returns the number of points scored for that player.
+
+
+def num_points_scored(player_name)
+  if game_hash[:home][:players].include?(player_name)
+    return game_hash[:home][:players][:points]
+  elsif game_hash[:away][:players].include?(player_name)
+    return game_hash[:away][:players][:points]
+  end
+end
+
+

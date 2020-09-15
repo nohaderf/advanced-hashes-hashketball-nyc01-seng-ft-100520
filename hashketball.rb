@@ -210,15 +210,13 @@ end
 # Build a method, big_shoe_rebounds, that will return the number of rebounds associated with the player that has the largest shoe size.
 
 def big_shoe_rebounds
-  shoe_sizes = [ ]
-  biggest_shoe = nil
+  biggest_shoe = 0
+  player_rebounds = nil
   game_hash.each do |team, team_values|
     team_values[:players].each do |player_info|
-      shoe_sizes << player_info[:shoe]
-      shoe_sizes.sort
-      biggest_shoe = shoe_size[0]
-      if player_info[:shoe] == biggest_shoe
-        player_info[:rebounds] = player_rebounds
+      if player_info[:shoe] > biggest_shoe
+        player_info[:shoe] = biggest_shoe
+        layer_info[:reounds] = player_rebounds
       end
     end
   end

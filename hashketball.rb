@@ -152,4 +152,12 @@ def shoe_size(player_name)
   end
 end
 
+# Build a method, team_colors, that takes in an argument of the team name and returns an Array of that team's colors.
 
+def team_colors(team_name)
+  game_hash.each do |team, team_values|
+    if team_values[:team_name] == team_name
+      return team_values[:colors]
+    end
+  end
+end

@@ -186,6 +186,7 @@ def player_numbers(team_name)
     if team_values[:team_name] == team_name
       team_values[:players].each do |player_info|
         player_info[:number] << jersey_numbers
+    end
   end
   jersey_numbers
 end

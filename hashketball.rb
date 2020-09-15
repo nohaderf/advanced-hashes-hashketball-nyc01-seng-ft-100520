@@ -165,4 +165,6 @@ end
 # Build a method, team_names, that operates on the game Hash to return an Array of the team names.
 
 
+# Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
+
 

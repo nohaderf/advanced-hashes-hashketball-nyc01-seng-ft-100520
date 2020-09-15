@@ -127,8 +127,8 @@ def game_hash
   }
 end
 
-# Build a method, num_points_scored that takes in an argument of a player's name and returns the number of points scored for that player.
 
+# Build a method, num_points_scored that takes in an argument of a player's name and returns the number of points scored for that player.
 
 def num_points_scored(player_name)
   game_hash.each do |team, team_values|
@@ -140,4 +140,13 @@ def num_points_scored(player_name)
   end
 end
 
+# Build a method, shoe_size, that takes in an argument of a player's name and returns the shoe size for that player.
+
 def shoe_size(player_name)
+  game_hash.each do |team, team_values|
+    team_values[:players].each do |player_info|
+      if player_info[:player_name] == player_name
+        return player_info[:shoe]
+      end
+    end
+  end

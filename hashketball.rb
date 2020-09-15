@@ -195,3 +195,13 @@ end
 
 
 # Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.
+
+def player_stats(player_name)
+  game_hash.each do |team, team_values|
+    team_values[:players].each do |player_info|
+      if player_info[:player_name] == player_name
+        return player_info
+      end
+    end
+  end
+end

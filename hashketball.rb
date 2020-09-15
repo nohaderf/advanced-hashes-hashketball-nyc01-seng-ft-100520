@@ -215,6 +215,10 @@ def big_shoe_rebounds
     team_values[:players].each do |player_info|
       sorted_shoes = player_info[:shoe].sort
       shoe_sizes << sorted_shoes
+      player_info[]
+    team_values[:players].each do |player_info|
+      
     end
+    shoe_sizes[0]
   end
 end

@@ -185,10 +185,9 @@ def player_numbers(team_name)
   if game_hash[:home][:team_name] == team_name
     jersey_numbers << game_hash[:home][:players][:number]
   elsif game_hash[:away][:team_name] == team_name
-    jersey_numbers << game_hash[:away][:players][:number]  
-      end
-    end
+    jersey_numbers << game_hash[:away][:players][:number]  =
   end
+  jersey_numbers
 end
 
 # Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.

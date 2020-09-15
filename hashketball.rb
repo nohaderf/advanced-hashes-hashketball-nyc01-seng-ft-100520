@@ -182,10 +182,10 @@ end
 
 def player_numbers(team_name)
   jersey_numbers = []
-  if game_hash[:home][:team_name] == team_name
-    jersey_numbers << game_hash[:home][:players][:number]
-  elsif game_hash[:away][:team_name] == team_name
-    jersey_numbers << game_hash[:away][:players][:number]
+  game_hash.each do |team, team_values|
+    if team_values[:team_name] == team_name
+      team_values[:players].each do |player_info|
+        player_info[:number] << jersey_numbers
   end
   jersey_numbers
 end

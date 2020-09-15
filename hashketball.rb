@@ -166,8 +166,8 @@ end
 
 def team_names
   team_array = []
-  merge_teams = game_hash[:home].merge(game_hash[:away])
-  team_array.push(merge_teams)
+  team_array << game_hash[:home]
+  team_array << game_hash[:away]
   team_array
 end
 
